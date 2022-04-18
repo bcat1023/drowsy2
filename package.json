@@ -3,8 +3,7 @@
   "version": "04.16.2022",
   "private": true,
   "scripts": {
-    "start": "echo Installing Dependencies&&npm install hexo-cli -g&&echo Starting startup process&&hexo version&&hexo generate",
-    "build": "hexo generate",
+    "build": "echo -e "\033[\033[0;32mINFO0;34m Starting Generation"&&hexo clean&&hexo generate&&echo -e "\033[0;32mINFO Generation Completed"",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server"
